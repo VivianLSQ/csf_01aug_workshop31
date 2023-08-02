@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col col-xs-5">
+      <app-inventory [inventory]="inventory" (onSelectedItem)="receiveSelectedItems($event)">
+
+      </app-inventory>
+    </div>
+    <div class="col col-xs-5">
+      <app-shopping-cart [cartItems]="receivedItems">
+
+      </app-shopping-cart>
+    </div>
+  </div>
+</div>
+
+<!-- <br><br>
+<app-item-list (onItemSelected)="selectedItem($event)"></app-item-list> -->
+
+
+
